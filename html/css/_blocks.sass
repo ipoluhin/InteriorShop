@@ -1,0 +1,291 @@
+@import 'mixin'
+@import 'vars'
+
+.slider
+    position: relative
+    .header
+        +flex($sbe)
+        padding-top: 63px
+        align-items: center
+        .logo
+            padding-top: 6px
+            padding-left: 98px
+        .menu
+            +flex($sbe)
+            align-items: center
+            margin-right: 167px
+            &__list
+                padding: 0
+                +lstypen
+            &__link
+                padding-left: 10px
+                padding-right: 10px
+                line-height: 48px
+                color: #8c8c8c
+                font-size: 14px
+                font-weight: 300
+                +nodesc
+                &:hover
+                    color: #212121
+                    font-size: 14px
+                    font-weight: 400
+            &__link_active
+                padding-left: 10px
+                padding-right: 10px
+                line-height: 48px
+                color: #212121
+                font-size: 14px
+                font-weight: 700
+                +nodesc
+                border-bottom: 3px solid black
+            .search
+                width: 23px
+                height: 23px
+                margin-top: 12px
+    .text
+        & h3
+            font-size: 18px
+            line-height: 18px
+            font-weight: 700
+            margin-bottom: 22px
+        & h1
+            color: #212121
+            font-size: 54px
+            line-height: 52px
+            font-weight: 100
+            margin-top: 0
+            margin-bottom: 34px
+            padding-right: 8px
+        & p
+            color: #6c6c6c
+            font-size: 14px
+            line-height: 24px
+            font-weight: 300
+            margin-top: 0
+        & a,
+        & a:hover
+            display: block
+            +nodesc
+            background-color: #ffffff
+            width: 212px
+            height: 45px
+            border-radius: 22px
+            text-align: center
+            line-height: 45px
+            color: #212121
+            font-size: 18px
+            font-weight: 700
+            text-align: center
+            box-sizing: border-box
+            &:hover
+                box-sizing: border-box
+                box-shadow: 0px 2px 4.85px 0.15px rgba(19, 18, 18, 0.35)
+    .slider__pagination
+        display: inline-block
+        justify-content: center
+        height: 40px
+        bottom: 19px
+        +nodesc
+        margin-left: 620px
+        position: absolute
+        & a
+            display: block
+            float: left
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: #c7c7c7
+            margin: 10px
+            +nodesc
+            &:hover,
+                width: 40px
+                height: 40px
+                background-color: #212121
+                margin: 5px
+                transition: 0.2s linear
+        .slider_active
+            width: 40px
+            height: 40px
+            background-color: #212121
+            margin: 5px
+            &:hover
+                opacity: 80%
+
+.mini-nav-bar
+    +flex($sbe)
+    padding: 0
+    margin-top: 0
+    margin-bottom: 0
+    &__list_active
+        +lstypen
+        & a
+            display: block
+            +nodesc
+    &__list
+        padding: 0 20px
+        +lstypen
+
+.mini-galery
+    height: 270px
+    +flex($sbe)
+    width: 100%
+    &__item
+        height: 270px
+        +flex($sbe)
+        align-items: center
+        &:hover
+            transition: 0.4s linear
+        &:hover img
+            z-index: 0
+            opacity: 20%
+        &:hover .mini-galery__back-decription
+            +flex($sbe)
+            flex-direction: column
+            align-items: center
+            position: absolute
+            opacity: 100%
+            margin-left: 32px
+            z-index: 2
+    &__back-decription
+        display: none
+        position: absolute
+        transition: 1s linear
+        & a,
+        & a:hover
+            +flex(center)
+            +nodesc
+            background-color: #ffffff
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            text-align: center
+            line-height: 45px
+            color: #212121
+            font-size: 20px
+            font-weight: 700
+            align-items: center
+            box-sizing: border-box
+            &:hover
+                box-sizing: border-box
+                box-shadow: 0px 2px 4.85px 0.15px rgba(19, 18, 18, 0.35)
+                +nodesc
+                +lstypen
+        & a
+            border: 0.5px solid #6c6c6c
+        & h3
+            font-size: 22px
+            line-height: 29px
+            font-weight: 700
+            color: #212121
+        & p
+            +flex($sbe)
+            width: 206px
+            font-size: 14px
+            line-height: 21px
+            font-weight: 300
+            color: #6c6c6c
+
+.explore-all
+    display: inline-block
+    &__link
+        +nodesc
+        +lstypen
+        font-size: 18px
+        line-height: 18px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.2em
+        color: #6c6c6c
+        &:hover
+            color: #212121
+
+.galery
+    +flex($sbe)
+    flex-wrap: wrap
+    &__item
+        margin-bottom: 30px
+        position: relative
+        +flex(center)
+        align-items: center
+        &:hover img
+            z-index: 0
+            opacity: 20%
+        &:hover .mini-galery__back-decription
+            +flex($sbe)
+            flex-direction: column
+            align-items: center
+            position: absolute
+            z-index: 2
+        & a
+            +lstypen
+            +nodesc
+            &:hover
+                box-sizing: border-box
+                outline: 0.5px solid #ccc
+                box-shadow: 0.2px 2px 4.85px 0.15px rgba(19, 18, 18, 0.35)
+                opacity: 0.1
+                transition: 0.2s
+        .mini-galery__back-decription
+            display: none
+            position: absolute        
+
+.promo
+    width: $cntwidth
+    height: 683px
+    display: flex
+    .promo-product
+        width: $cntwidth / 2
+        .promo-product__text
+            margin-top: 229px
+            margin-left: 51px
+            & h3
+                color: #1e88e5
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                margin-bottom: 22px
+                margin-top: 0
+            & h1
+                font-size: 36px
+                line-height: 1.2
+                font-weight: 700
+                color: #212121
+                margin-top: 0
+                margin-bottom: 34px
+                padding-right: 8px
+            & p
+                width: 378px
+                color: #6c6c6c
+                font-size: 14px
+                line-height: 14px
+                font-weight: 300
+                margin-top: 0
+                margin-bottom: 30px
+            & a,
+            & a:hover
+                display: block
+                +nodesc
+                background-color: #ffffff
+                width: 212px
+                height: 45px
+                border-radius: 22px
+                text-align: center
+                line-height: 45px
+                color: #212121
+                font-size: 18px
+                font-weight: 700
+                text-align: center
+                box-sizing: border-box
+                &:hover
+                    box-sizing: border-box
+                    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35)
+
+.clearblock
+    width: $cntwidth
+    height: 120px
+    margin: 0 auto
+
+.clearblock_71px
+    height: 71px
+    width: $cntwidth
+    margin: 0 auto
