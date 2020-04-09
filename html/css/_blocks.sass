@@ -289,3 +289,130 @@
     height: 71px
     width: $cntwidth
     margin: 0 auto
+
+.footer
+    width: $cntwidth
+    height: 384px
+    margin: 0 auto
+    background-color: #f7f7f7
+    padding-top: 120px
+    +flex($sar)
+    flex-direction: column
+    align-items: center
+    &__menu,
+    &__end
+        width: 1171px
+        +flex($sbe)
+    &__menu
+        .contacts
+            width: 221px
+            +flex($sbe)
+            flex-wrap: wrap
+            margin-right: 80px
+            & h3
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #6c6c6c
+                margin-bottom: 24px
+            & p
+                font-size: 14px
+                line-height: 22px
+                font-weight: 300
+                color: #212121
+        .information
+            +flex(start)
+            flex-direction: column
+            flex-wrap: wrap
+            margin-right: 78px
+            & h3
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #6c6c6c
+                margin-left: 0
+                margin-bottom: 15px
+            &__nav
+                +flex($sbe)
+                width: 430px
+                & ul
+                    margin-left: -40px
+                    margin-right: 40px
+                & ul li
+                    +lstypen
+                    margin-bottom: 15px
+                & a
+                    +nodesc
+                    +flex($sbe)
+                    font-size: 14px
+                    line-height: 14px
+                    font-weight: 700
+                    text-transform: uppercase
+                    letter-spacing: 0.05em
+                    color: #212121
+                    flex-wrap: nowrap
+        .subscribe
+            & h3
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 0.1em
+                color: #6c6c6c
+                margin-bottom: 24px
+            & p
+                font-family: Montserrat
+                font-size: 14px
+                line-height: 18px
+                font-weight: 300
+                color: #212121
+                margin-bottom: 26px
+            &__form
+                position: relative
+                display: flex
+                &__input
+                    width: 370px
+                    height: 48px
+                    background-color: #ffffff
+                    font-size: 14px
+                    line-height: 22px
+                    font-weight: 300
+                    color: #6c6c6c
+                    padding-left: 17px
+                & .faw-telegram
+                    +flex(center)
+                    align-items: center
+                    box-sizing: border-box
+                    width: 45px
+                    height: 45px
+                    background-color: #fff
+                    border: 0
+                    position: absolute
+                    top: 10%
+                    right: 29px
+                    .fa-telegram-plane
+                        font-size: 22px
+                        line-height: 22px
+                        font-weight: 400
+                        color: #6c6c6c
+    &__end
+        +flex($sbe)
+        align-items: center
+        & p
+            font-size: 12px
+            line-height: 26px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.05em
+            color: #6c6c6c
+        .faw-icons
+            font-size: 28px
+            line-height: 26px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.2em
+            color: #6c6c6c
