@@ -1413,7 +1413,7 @@ body {
 .container .mobile-block {
   padding-top: 125px;
   padding-bottom: 120px;
-  /** width: $cntwidth**/
+  width: 1366px;
   background-image: url(../images/mobile/back_img.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1425,7 +1425,7 @@ body {
 
 .container .mobile-block .mobile-app__info {
   margin-left: 99px;
-  /** width: 414px**/
+  width: 414px;
 }
 
 .container .mobile-block .mobile-app__info h3 {
@@ -1440,7 +1440,7 @@ body {
 }
 
 .container .mobile-block .mobile-app__info h1 {
-  /** width: 100% **/
+  width: 100%;
   font-size: 54px;
   line-height: 62px;
   font-weight: 100;
@@ -1459,7 +1459,7 @@ body {
 }
 
 .container .mobile-block .mobile-app__info .mobile-app__source {
-  /** width: 280px */
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
