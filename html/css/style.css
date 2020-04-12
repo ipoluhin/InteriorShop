@@ -1118,6 +1118,10 @@
           align-items: center;
 }
 
+.footer__end a {
+  color: #6c6c6c;
+}
+
 .footer__end p {
   font-size: 12px;
   line-height: 26px;
