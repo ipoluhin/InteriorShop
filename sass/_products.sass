@@ -1,0 +1,64 @@
+@import 'vars'
+@import 'mixin'
+
+.products-slider
+    width: $cntwidth
+    height: 100%
+    background-color: #f5f5f5
+    padding-bottom: 56px
+    .header
+    .text
+        margin-top: 133px
+        margin-left: 101px
+        h1
+            font-size: 62px
+            line-height: 62px
+            font-weight: 100
+            color: #212121
+.our-products
+    width: 1171px
+    margin: 0 auto
+    .our-products__mini-nav-header
+        margin-bottom: 50px
+        .our-products__mini-nav-bar
+            width: 300px
+            box-sizing: border-box
+            border-bottom: 1px solid #6c6c6c
+            .mini-nav-bar__list_active a,
+            .mini-nav-bar__list a:hover
+                text-transform: uppercase
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                letter-spacing: 0.1em
+                +nodesc
+                color: #212121
+            .mini-nav-bar__list_active
+                border-bottom: 2px solid black
+            .mini-nav-bar__list a
+                text-transform: uppercase
+                font-size: 18px
+                line-height: 18px
+                font-weight: 700
+                letter-spacing: 0.1em
+                +nodesc
+                color: #6c6c6c
+
+.update
+    margin: 0 auto
+    margin-top: 41px
+    width: 70px
+    height: 70px
+    +flex(center)
+    align-items: center
+    font-size: 42px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    color: #212121
+    &:hover
+        width: 70px
+        height: 70px
+        border-radius: 35.0px
+        background-color: #d8f4fe
